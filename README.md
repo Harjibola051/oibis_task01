@@ -2,51 +2,60 @@
 exploratory data analysis
 # Exploratory Data Analysis (EDA)
 
-## Overview
-This project performs exploratory data analysis (EDA) on a retail sales dataset to uncover patterns, trends, and insights from the data.
+##  Project Overview
 
-## Objectives
-- Data cleaning and transformation
-- Descriptive statistics and data visualization
-- Time series analysis
+This project analyzes retail sales data to uncover insights into customer behavior, sales trends, and product performance.
+
+Using Python, we perform data cleaning, exploratory data analysis (EDA), and time-series analysis to understand key sales drivers.
 
 ## Dataset
-- Source: retail_sales_dataset.csv
-- Description: Contains sales data with 9 columns and 1000 entries
-- Key features: Quantity, Price per Unit, Total Amount, Gender, Product Category, and Date
+
+The dataset consists of 1,000 transactions with 9 columns:
+- Date – Transaction date
+- Age – Customer’s age
+- Gender – Male/Female
+- Product Category – Clothing, Electronics, Beauty
+- Quantity – Items purchased
+- Price per Unit – Cost per item
+- Total Amount – Total spent per transaction.
+
+# Analysis
+## 1.Data Cleaning & Preprocessing
+- Handled missing values and duplicates
+- Converted the Date column to datetime format
+- Performed descriptive statistics for numerical and categorical features
+## 2. Descriptive Statistics & Insights
+- Average customer age: 41 years
+- Average transaction value: $456
+- Most common purchase: 4 items at $50 each
+- Majority buyers: Female customers, mostly purchasing clothing
   
+## 3. Time-Series Analysis
+- **Sales Trend Over Time:**
 
-## Key Analysis Steps
+Spikes in sales due to seasonal trends & promotions. Highest sales in June 2023; lowest in October 2023
 
-### 1. Data Loading and Cleaning
-- No null values detected
-- Date column converted to datetime format
-- Duplicate rows removed
+Overall quarterly growth in 2023, slight dip in early 2024. 
 
-### 2. Descriptive Statistics
-- Numerical columns' mode values:
-  - Quantity: 4
-  - Price per Unit: $50
-  - Total Amount: $50
-- Categorical columns' mode values:
-  - Gender: Female
-  - Product Category: Clothing
+## 4. Customer & Product Analysis
+- Genders : 51% Female, 49% Male
+- Total revenue: ~$456,000 (Females: $232,840, Males: $223,160)
+- **Category Preferences:**
+- Females: Clothing & Beauty
+- Males: Electronics
+  
+## 4. Visualizations
+This project includes various data visualizations using Matplotlib & Seaborn:
+-  Sales trends over time (Daily, Monthly, Quarterly)
+-  Donut chart for total spending by gender
+-  Bar charts for spending by category & gender
+-  Histogram for customer age distribution
+-  Boxplots for gender vs. spending behavior
 
-### 3. Time Series Analysis
-- Aggregate sales over time
-- Quarterly sales trend
-- Monthly sales trend
+##  Tech Stack
 
-## Results
-- Most purchases involved 4 items with each unit priced at $50
-- Female customers are more active, and Clothing is the most sought-after product category
-- Sales trends show seasonal fluctuations
+Python (Pandas, Seaborn, Matplotlib)
 
-## Tools and Libraries
-- Python 3.x
-- Pandas
-- Seaborn
-- Matplotlib
+Jupyter Notebook
 
-
-
+Git/GitHub for version control
